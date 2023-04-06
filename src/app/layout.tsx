@@ -1,8 +1,14 @@
+import { Metadata } from "next"
 import "./globals.css"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Glide dummy data GPT",
   description: "Generate dummy data for your Glide Apps easily with GPT-4",
+  openGraph: {
+    title: "Glide dummy data GPT",
+    description: "Generate dummy data for your Glide Apps easily with GPT-4",
+    images: ["/og.jpg"],
+  },
 }
 import { Inter } from "next/font/google"
 import localFont from "next/font/local"
